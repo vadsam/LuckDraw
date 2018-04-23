@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Lucky Draw</title>
+  </head>
+  <body>
+    <h1>Luck Draw Contest</h1>
+    <h2>Pick a number between 1 to 10 and place your bet for a chance to win.</h2>
+    <b><u><div id="app"></div></u></b>
+    <br></br>
+    <div id="betlimits"><b>Draw will occur after getting <span id = "maxBet"></span> bets</b></div>
+    <br></br>
+    <div id="minbet"><b>Bets must be greater or equal to a minimum of <span id = "minBetAmt"></span></b></div>
+    <br></br>
+    <div id="lastWin">Last Winning Number:<span id = "lstWin"></span></div>
+    <br></br>
+    <div id="totalbet">Total Bets Placed:<span id = "totBet"></span></div>
+    <br></br>
+    <div id="przamt">Prize Pot Total:<span id = "prizeamt"></span></div>
+    <br></br>
+    <div>
+        <span>Your Bet Amount: <input id="BetAmt" type="number" value="1" step="0.01"></span>
+        <br></br>
+        Bet on Number: <select name="pickNumber" id="picknum">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <br></br>
+          <span>
+          <input type = "button" id="bet" value = "Place Bet" onclick="placeBet()"></span>
+          Track your transaction here:<a href="" id="txn" target="_blank">Track Transaction</a>
+          <br></br>
+          <span>
+              <input type = "button" id="claim" value = "Claim Winnings" onclick="claimWin()"></span>
+        </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
